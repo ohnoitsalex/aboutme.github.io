@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!--     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script> -->
+
+    <title> Website </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Style sheet (CSS) and JavaScript scripts necessary to use Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+    <!-- Style sheet (CSS) and JavaScript scripts necessary to use JQuery as well as JQueryUI library -->
+    <!-- which is built on top of JQuery and offers additional possibilities -->
+    <!-- For example, JQuery UI has a datepicker which is popular and that we can use -->
+    <link href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/themes/excite-bike/jquery-ui.css" rel="stylesheet" type="text/css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <!-- Your own script -->
+    <script src="scripts/script.js"></script>
+
+    <!-- Your own additional style sheet -->
+    <link href="styles/styles.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg ">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <hi style="color: black; font-family: cursive;">Alexander Onofrei</hi>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#home" onclick="switchSection('#aboutMe')">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about" onclick="switchSection('#about')">Resume</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#portfolio" onclick="switchSection('#portfolio')">Projects and Volunteering</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact" onclick="switchSection('#contact')">Photography</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main content -->
+  <div class="container">
+    <div class="content">
+      <div class="section">
+        <div id="home" class="section1">
+          <div class="image-container">
+            <img src="images/Main_Picture.png" alt="Main Image - About Me">
+          </div>
+          <div class="box1">
+            <h2 class="intro" style="color: #ffffff; text-align: center;"> My name is Alexander Onofrei.</h2>
+            <p style="color: #ffffff; text-align: center;">I am currently a Master's student at the University of Sherbrooke. </p>
+          </div>
+        </div>
+        <div class="about_me">
+           <p style="text-align: center;">I am a driven, diligent, and dependable software engineer student who possesses a profound comprehension of system requirements and possesses the expertise to skillfully construct resilient code that fulfills those demands. Proficiency in the realms of testing, debugging, and seamlessly resolving complexities within established software systems further enhances my capabilities. <br> <br> Nature's embrace beckons to me, and I find immense joy and purpose in environmental conservation. It is through my fervent dedication to preserving our natural world that I am able to uncover inspiration and invigoration. Adventure is an integral part of my essence, as I scale heights, sprint through landscapes, traverse trails, and embark on thrilling biking escapades.</p>
+           <br>
+           <br>
+           <a href="files/Resume.pdf" download target="_blank" class="resume_button">Download Resume</a>
+        </div>
+      </div>
+
+
+
+      <div id="aboutMe" class="section" style="display: none;">
+        <div id="home" class="section1">
+          <div class="image-container">
+            <img src="images/Main_Picture.png" alt="Main Image - About Me">
+          </div>
+          <div class="box1">
+            <h2 class="intro" style="color: #ffffff;">My name is Alexander Onofrei. </h2>
+            <p style="color: #ffffff;">I am currently a Master's student at the University of Sherbrooke. </p>
+          </div>
+        </div>
+        <div class="about_me">
+           <p style="text-align: center;">I am a driven, diligent, and dependable software engineer student who possesses a profound comprehension of system requirements and possesses the expertise to skillfully construct resilient code that fulfills those demands. Proficiency in the realms of testing, debugging, and seamlessly resolving complexities within established software systems further enhances my capabilities. <br> <br> Nature's embrace beckons to me, and I find immense joy and purpose in environmental conservation. It is through my fervent dedication to preserving our natural world that I am able to uncover inspiration and invigoration. Adventure is an integral part of my essence, as I scale heights, sprint through landscapes, traverse trails, and embark on thrilling biking escapades.</p>
+           <br>
+           <br>
+           <a href="files/Resume.pdf" download target="_blank" class="resume_button">Download Resume</a>
+        </div>
+      </div>
+
+
+
+      <div id="about" class="section" style="display: none;">
+        <div class="professional_experience">
+          <h1 style="margin-bottom: 50px;">Professional Experience</h1>
+          <hr style="color: #acb7ae; background-color: #acb7ae; height:5px">
+          <div class="job">
+            <br>
+            <div class="job_information">
+              <div style="  width: 10%;text-align: center;">
+                <img src="images/motorolaSolutions.png" alt="motorolaSolutions" >
+              </div>
+              <div class="job_precision">
+                <h2>MOTOROLA SOLUTIONS</h2>
+                <h4>Software Engineer - Gatineau, QC</h3>
+                <h4>January 2021 - August 2022</h3>
+              </div>
+            </div>
+            <div class="job_description">
+              <p style="color: #acb7ae;">Focused on next-generation cloud based 911 SMS communication applications</p>
+              <ul style="color: #acb7ae;">
+                <li>Designed, developed, and tested SMS prototype supporting next-generation 911 SMS communication applications, incorporating SIP, SDP, and MSRP protocols. Utilized Spring Boot, Redis, C++, and Erlang.</li>
+                <li>Designed, developed, and tested full-stack cloud simulators for distributed systems, encompassing UML design, API design, endpoint design and front-end design. Employed Spring Boot, Angular, and MongoDB. </li>
+                <li>Containerized and deployed full-stack applications and prototypes in a cloud environment using Azure DevOps, Kubernetes, and Docker. </li>
+                <li>Collaborated with senior engineers to implement Agile Scrum development methodologies for all prototype development tasks.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="job">
+            <br>
+            <div class="job_information">
+              <div style="  width: 9%;text-align: center;">
+                <img src="images/3IT.png" alt="3IT" >
+              </div>
+              <div class="job_precision_sherby">
+                <h2>3IT - UNIVERSITY OF SHERBROOKE</h2>
+                <h4>Software Engineer & Research Assistant - Sherbrooke, QC</h3>
+                <h4>September 2021 - December 2021</h3>
+              </div>
+            </div>
+            <div class="job_description">
+              <p style="color: #acb7ae;">Conducted research and prototyping on cloud based applications in the renewable energy sector</p>
+              <ul style="color: #acb7ae;">
+                <li>Developed, tested, and designed applications for gathering information from specific sensors on Razon+, SolarEdge, and Stace solar panels, leveraging Python. Tasks included UML design, API design, and database design.</li>
+                <li>Employed relational databases (PostgreSQL) and container orchestration with Docker to manipulate and manage Big Data, ensuring the delivery of clear and structured data to clients. </li>
+                <li>Collaborated with senior engineers to implement Agile Scrum development methodologies for all prototype development tasks with the use of GitLab.</li>
+                <li>Developed and tested Python modules that facilitate seamless interfacing with specific four-terminal sensing instruments.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="job">
+            <br>
+            <div class="job_information">
+              <div style="  width: 9%;text-align: center;">
+                <img src="images/ssc.png" alt="3IT" >
+              </div>
+              <div class="job_precision_ssc">
+                <h2>SHARED SERVICES CANADA</h2>
+                <h4>Support Technician - Ottawa, ON</h3>
+                <h4>May 2020 - August 2020</h3>
+              </div>
+            </div>
+            <div class="job_description">
+              <p style="color: #acb7ae;">Participated in global tasks across teams under the super vision of Cynthia Arcand</p>
+              <ul style="color: #acb7ae;">
+                <li>Developed, integrated, and maintained IT infrastructure components, providing technical support. </li>
+                <li>Processed large text files, extracted data using AWK and UNIX shell. </li>
+                <li>Supported backup, recovery, and hardware/software changes impact assessment. </li>
+                <li>Investigated and documented problems, interfaced with next-level support.</li>
+              </ul>
+            </div>
+          </div>
+          <br>
+          <hr style="color: #acb7ae; background-color: #acb7ae; height:5px">
+          <div class="technical_expertise">
+            <h1 style="margin-bottom: 50px;">Technical Expertise</h1>
+            <div style="text-align: left">
+              <h4> Programming Languages</h4>
+              <h6 style="color: #acb7ae;"> Java, C++, Python, C, HTML, CSS, SQL, VHDL</h6>
+              <br>
+              <h4> Development Tools</h4>
+              <h6 style="color: #acb7ae;"> Intellij, CLion, Eclipse, VS Code, PyCharm, Android Studio, Git</h6>
+              <br>
+              <h4>Software Frameworks</h4>
+              <h6 style="color: #acb7ae;">Spring Integration, Angular, Flask, Boostrap, JQuery, React</h6>
+              <br>
+              <h4> Domain Knowledge</h4>
+              <ul style="color: #acb7ae;">
+                <li>Proficient in both Object-Oriented architecture and Procedural-Oriented architecture</li>
+                <li>Solid understanding of essential data structures, such as balanced trees, binary trees, hashing, and graphs</li>
+                <li>Extensive knowledge and hands-on experience with a variety of hard and soft real-time operating systems.</li>
+                <li>Comprehensive knowledge of communication protocols (TCP/IP, UDP, HTTP, SIP, SDP, MSRP, HELD)</li>
+                <li>Strong grasp of computer architecture and digital system logic, including sequential logic, algorithmic state diagrams, and asynchronous circuits.</li>
+              </ul>
+            </div>
+          </div>
+          <br>
+          <hr style="color: #acb7ae; background-color: #acb7ae; height:5px">
+          <div class="technical_expertise">
+            <h1 style="margin-bottom: 50px;">Skills</h1>
+            <div style="text-align: left">
+              <ul style="color: #acb7ae;">
+                <li>Able to work efficiently under pressure</li>
+                <li>Able to grasp concepts efficiently</li>
+                <li>Excellent time management</li>
+                <li>Great communication skills</li>
+                <li>Excellent Research and problem-solving</li>
+              </ul>
+            </div>
+          </div>
+          <br>
+          <hr style="color: #acb7ae; background-color: #acb7ae; height:5px">
+          <div class="technical_expertise">
+            <h1 style="margin-bottom: 50px;">Academic Experience</h1>
+            <div style="text-align: left">
+              <h4>SHERBROOKE UNIVERSITY</h4>
+              <h6>Master of Engineering - Software Engineering    (In Progress)</h6>
+              <ul style="color: #acb7ae;">
+                <li>20 000$ Research Grant in Cybersecurity</li>
+                <li>Utilized artificial intelligence to effectively map criminal networks, identifying key actors, establishing connections, and uncovering globally utilized techniques</li>
+              </ul>
+              <br>
+              <h4>UNIVERSITY OF OTTAWA</h4>
+              <h6>Bachelor of Engineering - Computer Engineering (Co-op)</h6>
+              <ul style="color: #acb7ae;">
+                <li>Graduated with honors: Magna Cum Laude</li>
+                <li>Overall GPA: 3.81 / 4.00</li>
+                <li>Dean's List Honouree - 2020, 2021, 2022</li>
+                <li>Bursary for continued education in French</li>
+              </ul>
+              <br>
+              <h4>UNIVERSEL COLLEGE </h4>
+              <h6>Specialised degree in Natural Sciences and Engineering</h6>
+              <ul style="color: #acb7ae;">
+                <li>Graduated with honors</li>
+                <li>Most Valuable Player - Men's Basket-ball</li>
+                <li>Rookie of the year - Men's Basket-ball</li>
+                <li>RSEQ Student-Athlete Award - Awarded to student athletes with an average of 3.5 / 4.00 and above</li>
+              </ul>
+              <br>
+              <h4>COLLEGE SAINT-ALEXANDRE DE LA GATINEAU </h4>
+              <h6>High School Degree in Natural Sciences</h6>
+              <ul style="color: #acb7ae;">
+                <li>Graduated with honors in Physics, Mathematics and Physical Education</li>
+                <li>Student-Athlete</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+      <div id="portfolio" class="section" style="display: none;">
+       <div class="projects_volunteering">
+          <h1 style="margin-bottom: 50px;">Projects</h1>
+          <div class="project" style="text-align: left">
+            <h3>Remote Environment Cellular Frequency Finder</h3>
+            <h5>January 2022 - December 2022</h5>
+            <div class="project_information">
+              <div class="project_information_description">
+                <h6 style="color: #acb7ae;">Capstone Project funded by the Ottawa Volunteer Search and Rescue Association (SBO-OVSAR) that seeks to locate victims in coverage-deprived remote areas.</h6>
+                <ul style="color: #acb7ae;">
+                  <li>Designed to detect 3G, 4G and 5G frequencies.</li>
+                  <li>Made to operate in extreme conditions (-40C to 50C).</li>
+                  <li>Designed, built, and tested a soft real-time operating system that delivers crucial information to the user.</li>
+                  <li>Implemented a LAN network and Client-Server architecture, enabling seamless communication through a REST API with the utilization of Spring Boot and React technologies.</li>
+                </ul>
+              </div>
+              <div class="project_information_extra">
+                <a href="files/Cellular_Frequency_Scanner_SC.zip" download target="_blank" class="resume_button">Download Source Code</a>
+              </div>
+            </div>
+          </div>
+          <br>
+          <hr style="color: #acb7ae; background-color: #acb7ae; height:5px">
+          <br>
+          <div class="project" style="text-align: right">
+            <div class="project_information">
+              <div class="project_information_extra_van">
+                <div class="grid-container">
+                  <div class="image-grid">
+                    <div class="image-item">
+                      <img src="images/VanPictures/1.jpg" alt="Image 1" onclick="openModal('images/VanPictures/1.jpg', 'Image 1')">
+                    </div>
+                    <div class="image-item">
+                      <img src="images/VanPictures/2.jpg" alt="Image 2" onclick="openModal('images/VanPictures/2.jpg', 'Image 2')">
+                    </div>
+                    <div class="image-item">
+                      <img src="images/VanPictures/3.jpg" alt="Image 2" onclick="openModal('images/VanPictures/3.jpg', 'Image 2')">
+                    </div>
+                    <div class="image-item">
+                      <img src="images/VanPictures/4.jpg" alt="Image 2" onclick="openModal('images/VanPictures/4.jpg', 'Image 2')">
+                    </div>
+                    <div class="image-item">
+                      <img src="images/VanPictures/5.jpg" alt="Image 2" onclick="openModal('images/VanPictures/5.jpg', 'Image 2')">
+                    </div>
+                     <div class="image-item">
+                      <img src="images/VanPictures/6.jpg" alt="Image 2" onclick="openModal('images/VanPictures/6.jpg', 'Image 2')">
+                    </div>
+                    <div class="image-item">
+                      <img src="images/VanPictures/7.jpg" alt="Image 2" onclick="openModal('images/VanPictures/7.jpg', 'Image 2')">
+                    </div>
+                    <div class="image-item">
+                      <img src="images/VanPictures/8.jpg" alt="Image 2" onclick="openModal('images/VanPictures/8.jpg', 'Image 2')">
+                    </div>
+                     <div class="image-item">
+                      <img src="images/VanPictures/9.jpg" alt="Image 2" onclick="openModal('images/VanPictures/9.jpg', 'Image 2')">
+                    </div>
+                <!-- Add more image items here -->
+                  </div>
+                <div id="modal" class="modal">
+                  <span class="close" onclick="closeModal()">&times;</span>
+                  <img id="modal-image" src="" alt="">
+                <div id="modal-caption"></div>
+              </div>
+             </div>
+              </div>
+              <div class="project_information_description_van">
+                <h3>Van Conversion</h3>
+                <h5>March 2022 - December 2022</h5>
+                <h6 style="color: #acb7ae;">Fully Offgrid Van Conversion from scratch. </h6>
+                <ul style="color: #acb7ae; text-align: right; list-style-position: inside">
+                  <li>Hand made wooden furniture</li>
+                  <li>Independent electrical system including solar charging, independent lithium batteries, inverters and lighting.</li>
+                  <li>Supports 4 season camping and usage</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <br>
+          <hr style="color: #acb7ae; background-color: #acb7ae; height:5px">
+          <br>
+          <div class="project" style="text-align: left">
+            <h3>Engineering Games - Robotic Competition</h3>
+            <h5>January 2020</h5>
+            <div class="project_information">
+              <div class="project_information_description">
+                <h6 style="color: #acb7ae;">Built an intelligent robotic machine that overcame the various challenges of a predetermined course in a given time.</h6>
+                <ul style="color: #acb7ae;">
+                  <li>Secured an impressive 3rd place position while operating within a budget significantly smaller (10%) than that of the competition. </li>
+                  <li>Designed, conceptualized, tested, and successfully implemented a fully functional remote-guided robot, meticulously aligned with pre-defined requirements. </li>
+                  <li>Exhibited adeptness in programming Raspberry Pi boards and Arduino Uno boards. </li>
+                </ul>
+              </div>
+              <div class="project_information_extra">
+                <a href="https://jeuxdegenie.qc.ca/jdg/2020/competitions" target="_blank" class="resume_button">2020 Engineering Games Website</a>
+              </div>
+            </div>
+          </div>
+
+          <br>
+          <hr style="color: #acb7ae; background-color: #acb7ae; height:5px">
+          <h1 style="margin-bottom: 50px;">Volunteering</h1>
+          <div class="volunteering" style="text-align: right">
+            <h3>Expedition Assistant Guide</h3>
+            <h5>2020-2022</h5>
+            <div class="volunteering_information">
+              <div class="project_information_extra">
+              </div>  
+              <div class="project_information_description">
+                <h6 style="color: #acb7ae;">Assistant Guide to Canoe-Camping and Hiking expeditions with the outdoor program at College Saint-Alexander</h6>
+                <ul style="color: #acb7ae; text-align: right; list-style-position: inside">
+                  <li>Examined students for different outdoor skills such as knots, canoe techniques, shelter making, etc.</li>
+                  <li>Provided instructions, managed logistics and ensured participant safety.</li>
+                  <li>Thought canoe techniques, rescue procedures and water safety. </li>
+                </ul>
+              </div> 
+            </div>
+          </div>
+          <br>
+          <div class="Volunteering" style="text-align: left">
+            <h3>Adventure Race Volunteer</h3>
+            <h5>2019-2023</h5>
+            <div class="volunteering_information"> 
+              <div class="project_information_description">
+                <h6 style="color: #acb7ae;">Race Pulse Volunteer</h6>
+                <ul style="color: #acb7ae; text-align: left; list-style-position: inside">
+                  <li>Managed a team for the canoe section and checkpoint.</li>
+                  <li>Provided instructions, managed logistics and ensured participant safety.</li>
+                  <li>Managed canoes, kayaks and related equipment.</li>
+                </ul>
+              </div> 
+              <div class="project_information_extra" style="margin-top: 1%;">
+                <a href="https://www.raidpulse.com/photos/" target="_blank" class="resume_button">Raid Pulse Website</a>
+              </div> 
+            </div>
+          </div>
+          <br>
+          <br>
+          <div class="Volunteering" style="text-align: right">
+            <div class="volunteering_information"> 
+              <div class="project_information_extra" style="margin-top: 1%;">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/pjIPDcy5_Wk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div> 
+              <div class="project_information_description" style="margin-top: 6%;">
+                <h3>The North Face Sport Climbing Belayer</h3>
+                <h5>September 2019</h5>
+                <h6 style="color: #acb7ae;">Sport Climbing Volunteer for The North Face and Poisson Blanc Regional Park</h6>
+                <ul style="color: #acb7ae; text-align: right; list-style-position: inside">
+                  <li>Belayed Participants for Sport Climbing, Traditional Climbing and Top Roping.</li>
+                  <li>Responsible for setting up equipment (Ropes, anchors, belay platforms).</li>
+                  <li>Provided instructions, managed logistics and ensured participant safety.</li>
+                  <li>Participated in the making of the official video of the event</li>
+                </ul>
+              </div> 
+            </div>
+          </div>
+       </div>
+
+      </div>
+    </div>
+
+
+
+    <div id="contact" class="section" style="display: none;">
+      <div class="gallery">
+        <h1 style="margin-bottom: 50px;">Gallery</h1>
+        <div class="grid-container">
+          <div class="image-grid-gallery">
+            <div class="image-item">
+              <img src="images/Gallery/Climbing1.jpg" alt="Image 1" onclick="openLightbox()">
+            </div>
+            <div class="image-item">
+              <img src="images/Gallery/Climbing2.jpg" alt="Image 1" onclick="openLightbox()">
+            </div>
+            <div class="image-item">
+              <img src="images/Gallery/Water1.jpg" alt="Image 1" onclick="openLightbox()">
+            </div>
+            <div class="image-item">
+              <img src="images/Gallery/Winter1.jpg" alt="Image 1" onclick="openLightbox()">
+            </div>
+            <div class="image-item">
+              <img src="images/Gallery/Mountain2.jpg" alt="Image 1" onclick="openLightbox()">
+            </div>
+            <div class="image-item">
+              <img src="images/Gallery/Beach3.jpg" alt="Image 1" onclick="openLightbox()">
+            </div>
+            <div class="image-item">
+              <img src="images/Gallery/City1.jpg" alt="Image 1" onclick="openLightbox()">
+            </div>
+            <div class="image-item">
+              <img src="images/Gallery/Bug1.jpg" alt="Image 1" onclick="openLightbox()">
+            </div>
+          </div>
+        </div>
+        <!-- The Lightbox -->
+        <div id="lightbox" class="lightbox">
+          <span class="close" onclick="closeLightbox()">&times;</span>
+          <img id="lightboxImage" src="" alt="Lightbox Image">
+        </div>
+      </div>
+   </div>
+</body>
+
+<!-- Footer -->
+<footer class="text-light py-4">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4">
+        <h5>All Rights Reserved</h5>
+      </div>
+      <div class="col-lg-4">
+        <h5>Contact</h5>
+        <ul class="list-unstyled">
+          <li>Phone: +1 819 318-3927</li>
+          <li>Email: alexonofrei@hotmail.com</li>
+        </ul>
+      </div>
+      <div class="col-lg-4">
+        <h5>Related Links</h5>
+        <ul class="list-inline">
+          <li class="list-inline-item"><a href="https://www.linkedin.com/in/alexander-onofrei-60885b179/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+          <li class="list-inline-item"><a href="#"><i class="fab fa-github"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+</html>

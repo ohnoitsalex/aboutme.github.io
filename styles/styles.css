@@ -1,0 +1,450 @@
+/* Add your custom CSS styles here */
+.container {
+  margin-top: 20px;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.content {
+  max-width: 200%; /* Adjust the width as needed */
+  padding: 2%;
+  border-radius: 2%;
+  position: center;
+}
+
+.section1 {
+  background-color: #acb7ae;
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: row;
+
+}
+
+.section {
+  margin-top: 100px;
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+
+
+}
+
+.intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff; 
+  text-align: left;
+  opacity: 0.5;
+}
+
+.box1 {
+  display: flex;
+  justify-content: center;
+  align-items: left;
+  height: 500px;
+  margin-left: 4%;
+  margin-right: 4%;
+  flex-direction: column;
+  text-align: left;
+}
+
+.about_me {
+  margin-top: 10%;
+  margin-bottom: 4%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.resume_button {
+	display: inline-block;
+    padding: 10px 20px;
+    background-color: #acb7ae;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+  .resume_button:hover {
+    background-color: #d4d4d4;
+    color: #ffffff;
+  }
+
+.image-container {
+  width: 500px;
+  height: 500px;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Navbar styles */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #acb7ae;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+  transition: top 2.0s;
+}
+
+.navbar.scrolled {
+  top: -100px;
+}
+
+.navbar-brand {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+    position: relative;
+}
+
+.navbar-nav {
+  margin-left: auto;
+}
+
+.navbar-nav li {
+  margin-left: 15px;
+  transition: transform 0.3s;
+}
+
+.navbar-nav li:last-child {
+  margin-right: 0;
+}
+
+.navbar-nav li a {
+  font-family: 'Arial', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffffff;
+  position: relative;
+  transition: color 0.3s;
+}
+
+.navbar-nav li a:hover {
+  color: #d4d4d4;
+}
+
+/* Animation for navbar links */
+.navbar-nav li a::before {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #d4d4d4;
+  transform: scaleX(0);
+  transition: transform 0.5s;
+  transform-origin: bottom right;
+
+}
+
+.navbar-nav li a:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+  background-color: #d4d4d4;
+}
+
+/* Animation for navbar items */
+.navbar-nav li {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s ease-out forwards;
+  color: #ffffff;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Animation for navbar toggler icon */
+.navbar-toggler {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+}
+
+.navbar-toggler-icon {
+  width: 24px;
+  height: 24px;
+  background-image: url('menu-icon.png');
+  background-size: cover;
+  transition: transform 0.3s;
+}
+
+.navbar-toggler:hover .navbar-toggler-icon {
+  transform: scale(1.2);
+}
+
+.professional_experience{
+  margin-top: 20px;
+  margin-bottom: 50px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.job {
+  text-align: center;
+  flex-direction: column;
+}
+
+.job_information{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+}
+
+.job_precision {
+  margin-left: 40.5%;
+  margin-top: 5%;
+  display: inline-flex;
+  flex-direction: column;
+}
+
+.job_precision_sherby{
+  margin-left: 31.5%;
+  margin-top: 2%;
+  display: inline-flex;
+  flex-direction: column;
+}
+
+.job_precision_ssc{
+  margin-left: 39%;
+  margin-top: 2%;
+  display: inline-flex;
+  flex-direction: column;
+}
+
+.job_description {
+  margin-top: 5%;
+  text-align: left;
+}
+
+.technical_expertise{
+  margin-top: 40px;
+  margin-bottom: 50px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.projects_volunteering {
+  margin-top: 20px;
+  margin-bottom: 50px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.project {
+	text-align: center;
+}
+
+.project_information{
+  display: flex;
+  flex-direction: row;
+}
+
+.project_information_description{
+	flex-basis: 50%;
+}
+.project_information_description_van{
+    flex-basis: 50%;
+    margin-top: 15%;
+}
+
+.project_information_extra {
+	margin-top: 5%;
+	flex-basis: 50%;
+	  text-align: center;
+}
+
+.project_information_extra_van {
+	flex-basis: 50%;
+	  text-align: center;
+}
+
+
+.volunteering {
+	text-align: center;
+}
+
+.volunteering_information {
+  display: flex;
+  flex-direction: row;
+}
+
+.grid_container {
+	height: 50%;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+
+.image-grid-gallery {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 10px;
+}
+
+.image-item {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 100%;
+  overflow: hidden;
+}
+
+.image-item img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 10%;
+  top: 10%;
+  width: 80%;
+  height: 80%;
+  background-color: rgba(0, 0, 0, 0.8);
+  overflow: auto;
+}
+
+.modal-image {
+  display: block;
+  margin: 50px auto;
+  max-width: 50%;
+  max-height: 50%;
+}
+
+.close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 30px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.modal-caption {
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.gallery {
+  margin-top: 20px;
+  margin-bottom: 50px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Lightbox Styles */
+.lightbox {
+  display: none; /* Hide the lightbox by default */
+  position: fixed; /* Position the lightbox */
+  z-index: 1; /* Make sure it appears on top of other elements */
+  left: 10%;
+  top: 10%;
+  width: 70%; /* Full width */
+  height: 70%; /* Full height */
+  overflow: auto; /* Enable scrolling if needed */
+  background-color: rgba(0, 0, 0, 0.9); /* Black background with opacity */
+}
+
+.lightbox-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height:100%;
+}
+
+.lightbox-content img {
+ height:100%;
+ width:auto;
+}
+
+/* Close button */
+.close {
+  color: #fff;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
+
+
+
+/* Footer styles */
+footer {
+  background-color: #ffffff;
+  color: #82716e;
+  text-align: center; /* Center align the content */
+  padding: 20px 0; /* Add vertical padding for spacing */
+}
+
+footer h5 {
+  color: #e4decd;
+}
+
+footer p {
+  color: #e4decd;
+}
+
+footer ul.list-unstyled li {
+  color: #e4decd;
+}
+
+footer ul.list-inline li a {
+  color: #e4decd;
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+footer ul.list-inline li a:hover {
+  color: #e4decd;
+}
